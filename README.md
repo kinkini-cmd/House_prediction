@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/470dced0-d98c-40bc-8d80-197dea4c1fb3" /># 🏠 House Price Prediction using Machine Learning
+ House Price Prediction using Machine Learning
 
 A simple Machine Learning project that predicts the price of a house based on its **area in square feet**.
 
@@ -207,6 +207,8 @@ Predicted House Price
 ## Disclaimer
 
 This project is created for **educational and demonstration purposes**. The dataset is a small sample dataset and the predictions should not be considered real-world property valuations.
+<img width="1920" height="1080" alt="Screenshot From 2026-10-09 09-07-03" src="https://github.com/user-attachments/assets/18d7901b-9463-4a5a-8027-063906f706a9" />
+
 
 ## Author
 
