@@ -1,9 +1,3 @@
- House Price Prediction using Machine Learning
-
-A simple Machine Learning project that predicts the price of a house based on its **area in square feet**.
-
-The project uses **Linear Regression** and is implemented using **Python and Jupyter Notebook**.
-
 ## Project Overview
 
 House prices generally increase as the size of the house increases. In this project, we train a Linear Regression model using historical house area and price data.
