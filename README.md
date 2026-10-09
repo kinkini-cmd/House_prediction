@@ -92,69 +92,6 @@ Train Model
 Make Predictions
      ↓
 Evaluate / Visualize Results
-```
-
-## Visualization
-
-The project creates a scatter plot showing the relationship between:
-
-```text
-House Area → House Price
-```
-
-It also displays the Linear Regression prediction line.
-
-## How to Run
-
-### 1. Install Python
-
-Make sure Python is installed on your computer.
-
-### 2. Install required libraries
-
-Open your terminal and run:
-
-```bash
-pip install pandas numpy matplotlib scikit-learn jupyter
-```
-
-### 3. Start Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-### 4. Open the notebook
-
-Open:
-
-```text
-House_Price_Prediction.ipynb
-```
-
-### 5. Run the cells
-
-Run each notebook cell from top to bottom.
-
-## Prediction Example
-
-The user can enter the house area:
-
-```python
-area = float(input("Enter house area in square feet: "))
-
-prediction = model.predict([[area]])
-
-print(f"Estimated House Price: Rs. {prediction[0]:,.2f}")
-```
-
-Example:
-
-```text
-Enter house area in square feet: 1200
-
-Estimated House Price: Rs. 10,600,000.00
-```
 
 ##  Key Concepts Learned
 
