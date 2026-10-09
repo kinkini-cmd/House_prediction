@@ -26,7 +26,6 @@ Predicted House Price = Rs. 10,600,000
 ## Technologies Used
 
 - Python
-- Jupyter Notebook
 - Pandas
 - NumPy
 - Matplotlib
@@ -34,12 +33,8 @@ Predicted House Price = Rs. 10,600,000
 
 ## Project Structure
 
-```text
-house-price-prediction/
-│
-├── House_Price_Prediction.ipynb
-├── data.csv
-└── README.md
+<img width="288" height="416" alt="image" src="https://github.com/user-attachments/assets/454ffc9d-2acf-4281-948d-4372d1847e37" />
+
 ```
 
 ## Dataset
