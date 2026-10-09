@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,6 @@
 
     <title>House Price Prediction</title>
 
-    <!-- Connect CSS -->
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -18,7 +18,6 @@
 
     <div class="container">
 
-        <!-- Page Heading -->
         <h1>House Price Prediction</h1>
 
         <p>Enter the details of the house</p>
@@ -26,116 +25,71 @@
         <form method="POST" action="/predict">
 
             <!-- Area -->
-            <label for="area">Area (sq. ft.):</label>
+            <label for="area">
+                Area (sq. ft.):
+            </label>
+
             <input type="number"
                    id="area"
                    name="area"
                    min="1"
+                   placeholder="Enter area"
                    required>
 
 
             <!-- Bedrooms -->
-            <label for="bedrooms">Number of Bedrooms:</label>
+            <label for="bedrooms">
+                Number of Bedrooms:
+            </label>
+
             <input type="number"
                    id="bedrooms"
                    name="bedrooms"
                    min="1"
+                   placeholder="Enter bedrooms"
                    required>
 
 
             <!-- Bathrooms -->
-            <label for="bathrooms">Number of Bathrooms:</label>
+            <label for="bathrooms">
+                Number of Bathrooms:
+            </label>
+
             <input type="number"
                    id="bathrooms"
                    name="bathrooms"
                    min="1"
+                   placeholder="Enter bathrooms"
                    required>
 
 
             <!-- Stories -->
-            <label for="stories">Number of Stories:</label>
+            <label for="stories">
+                Number of Stories:
+            </label>
+
             <input type="number"
                    id="stories"
                    name="stories"
                    min="1"
+                   placeholder="Enter stories"
                    required>
 
 
-            <!-- Main Road -->
-            <label for="mainroad">Main Road:</label>
-            <select id="mainroad" name="mainroad" required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-
-            <!-- Guest Room -->
-            <label for="guestroom">Guest Room:</label>
-            <select id="guestroom" name="guestroom" required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-
-            <!-- Basement -->
-            <label for="basement">Basement:</label>
-            <select id="basement" name="basement" required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-
-            <!-- Hot Water Heating -->
-            <label for="hotwaterheating">Hot Water Heating:</label>
-            <select id="hotwaterheating"
-                    name="hotwaterheating"
-                    required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-
-            <!-- Air Conditioning -->
-            <label for="airconditioning">Air Conditioning:</label>
-            <select id="airconditioning"
-                    name="airconditioning"
-                    required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-
             <!-- Parking -->
-            <label for="parking">Parking Spaces:</label>
+            <label for="parking">
+                Parking Spaces:
+            </label>
+
             <input type="number"
                    id="parking"
                    name="parking"
                    min="0"
+                   placeholder="Enter parking spaces"
                    required>
 
 
-            <!-- Preferred Area -->
-            <label for="prefarea">Preferred Area:</label>
-            <select id="prefarea" name="prefarea" required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-
-            <!-- Furnishing Status -->
-            <label for="furnishingstatus">Furnishing Status:</label>
-            <select id="furnishingstatus"
-                    name="furnishingstatus"
-                    required>
-
-                <option value="furnished">Furnished</option>
-                <option value="semi-furnished">Semi-Furnished</option>
-                <option value="unfurnished">Unfurnished</option>
-
-            </select>
-
-
-            <!-- Submit Button -->
+            <!-- Submit -->
             <button type="submit">
                 Predict Price
             </button>
@@ -144,16 +98,18 @@
 
 
         <!-- Prediction Result -->
-        {% if prediction %}
-            <div class="result">
+        {% if prediction is defined %}
 
-                <h2>Predicted House Price</h2>
+        <div class="result">
 
-                <p>
-                    Rs. {{ "{:,.0f}".format(prediction) }}
-                </p>
+            <h2>Predicted House Price</h2>
 
-            </div>
+            <p>
+                Rs. {{ "{:,.0f}".format(prediction) }}
+            </p>
+
+        </div>
+
         {% endif %}
 
     </div>

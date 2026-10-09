@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -5,28 +6,31 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f2f4f7;
+    background: #08244e;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
     background: white;
     width: 400px;
+    max-width: 100%;
 
     padding: 30px;
 
     border-radius: 12px;
 
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     text-align: center;
+    color: #08244e;
 }
 
 p {
@@ -37,6 +41,7 @@ p {
 label {
     display: block;
     margin-top: 15px;
+    font-weight: bold;
 }
 
 input {
@@ -47,6 +52,13 @@ input {
 
     border: 1px solid #ccc;
     border-radius: 6px;
+
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
 }
 
 button {
@@ -63,6 +75,9 @@ button {
     color: white;
 
     cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
 }
 
 button:hover {
@@ -79,6 +94,14 @@ button:hover {
     border-radius: 6px;
 
     text-align: center;
+}
 
+.result h2 {
+    color: #2e7d32;
+}
+
+.result p {
+    color: #1b5e20;
+    font-size: 22px;
     font-weight: bold;
 }
